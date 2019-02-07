@@ -1,4 +1,3 @@
-# coding: cp949
 good_face=1
 good_pysical=1
 good_job=0
