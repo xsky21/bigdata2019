@@ -42,5 +42,4 @@ else:
     charge = fee - pay
     print("%d원이 모자랍니다. 입력하신 %d원을 반환합니다." %(charge,pay))
 # modify1
-# modify2
 
