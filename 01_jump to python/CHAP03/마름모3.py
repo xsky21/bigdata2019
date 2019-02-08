@@ -1,16 +1,14 @@
-# coding: cp949
 while True:
-    num=int(input("È¦¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(0<-Á¾·á): "))
+    num=int(input("í™€ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”(0<-ì¢…ë£Œ): "))
     empty=int(num/2)
     if num == 0 : break
     elif num % 2 == 0 : continue
     else:
         print(" "+"-"*num+" ")
-        for emp in range(empty,-1):
+        for emp in range(empty,-1,-1):
             point=num-2*emp
             print("|"+" "*emp+"*"*point+" "*emp+"|")
-        for empt in range(1,empty+1):
+        for emp in range(1,empty+1):
             point=num-2*emp
-            pyrint("|"+" "*empt+"*"*point+" "*empt+"|")
-
+            print("|"+" "*emp+"*"*point+" "*emp+"|")
         print(" "+"-"*num+" ")
