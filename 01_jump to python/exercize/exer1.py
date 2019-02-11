@@ -1,8 +1,11 @@
-username = ["janny", "hannah","margot","kevin","min"]
+#exer1.py
+import sys
+args = sys.argv[1:]
+# username = ["janny", "hannah","margot","kevin","min"]
 
 def greet_user(usernames):
-   for name in username:
+   for name in usernames:
       newname = name[:1].upper()+name[1:]+"!"
       print("hello, "+newname)
 
-greet_user(username)
+greet_user(args)
