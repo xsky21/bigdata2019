@@ -3,11 +3,15 @@ from copy import copy
 from sympy import Symbol, solve
 
 print("학생정보 데이터 분석 시작")
+ID_add = ""
+empty_id_list=[]
+empty_id = ""
 while True:
     tree = parse("students_info_2.xml")
     raw_info = tree.getroot()
     stu_total = str(len(raw_info.findall("student")))
     stu_list = raw_info.getiterator("student")
+    empty_id = raw_info.get("empty_ID")
     print("1. 요약정보")
     print("2. 입력")
     print("3. 조회")
@@ -96,16 +100,24 @@ while True:
             sex_inp = input("- 성별을 입력하세요: ")
             while True:
                 age_inp = input("- 나이를 입력하세요: ")
-            try :
-                int(age_inp)
+                try :
+                    int(age_inp)
+                except:
+                    print("나이를 다시 입력하세요")
+                    continue
+                else: break
             new_student= Element("student")
             raw_info.append(new_student) #새로운 스튜던트 태그 생성해서 스튜던트 리스트 밑에 집어 넣음
             new_student.attrib["sex"] = sex_inp #현재 new_student객체에는 방금 추가한 학생의 주소가 있다.
             new_student.attrib["name"] = name_inp
-            if len(stu_total) == 1:
-                ID_add = "ITT00"+str(int(stu_total)+1)
-            elif len(stu_total) == 2:
-                ID_add = "ITT0"+str(int(stu_total)+1)
+            if empty_id:
+                empty_id.split() = empty_id_list
+                ID_add = empty_id_list[0]
+            elif not empty_id:
+                if len(stu_total) == 1:
+                    ID_add = "ITT00"+str(int(stu_total)+1)
+                elif len(stu_total) == 2:
+                    ID_add = "ITT0"+str(int(stu_total)+1)
             new_student.attrib["ID"] = ID_add
             SubElement(new_student,"age").text = age_inp
             major_inp = input("- 전공을 입력하세요: ")
@@ -128,7 +140,7 @@ while True:
                     new_period = Element("period")
                     new_lang.append(new_period)
                     new_period.attrib["value"] = com_lang_peri
-                    ElementTree(raw_info).write("students_info_2.xml")
+        ElementTree(raw_info).write("students_info_2.xml")
     if menu_choice == "3":
         while True:
             print("<조회 서브 메뉴>")
@@ -266,7 +278,7 @@ while True:
                         print(str(num_d)+". level: " + lang_level)
                         num_d+=1
                 modi_num = input("수정할 항목의 번호를 입력하세요: ") #밑에선 접근만
-                modi_res = input("수정할 값을 입력하세요")#위에서 받은 주소에 가서 바뀐 값을 입력한다.
+                modi_res = input("수정할 값을 입력하세요: ")#위에서 받은 주소에 가서 바뀐 값을 입력한다.
                 q= range(0,10)
                 if modi_num == "1":
                     stu.attrib["name"] = modi_res
@@ -356,27 +368,9 @@ while True:
         for stu in stu_list:
             if stu.get("ID") == del_id:
                 raw_info.remove(stu)
+                empty_id +=" "+del_id
+                raw_info.attrib["empty_ID"] =  empty_id
                 print("삭제완료")
-                ElementTree(raw_info).write("students_info_2.xml")
-                tree = parse("students_info_2.xml")
-                raw_info = tree.getroot()
-                stu_total = len(raw_info.findall("student"))
-                stu_list = raw_info.getiterator("student")
-                stu_flag=0
-                for stu in stu_list:
-                    if str(len(str(stu_total))) == "1": #총 회원수가 한자리수라면
-                        stu_flag += 1
-                        stu.attrib["ID"] = "ITT00"+str(stu_flag)
-                        if stu_flag == stu_total:
-                            break
-                        else:continue
-                    elif str(len(str(stu_total))) == "2":
-                        stu_flag += 1
-                        if stu_flag < 10:
-                            stu.attrib["ID"] = "ITT00"+str(stu_flag)
-                        elif stu_flag>=10 and stu_flag <= stu_total:
-                            stu.atrrib["ID"] = "ITT0"+str(stu_flag)
-                        else: break
                 ElementTree(raw_info).write("students_info_2.xml")
                 break
             else:pass
