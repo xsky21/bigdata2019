@@ -2,6 +2,10 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="EUC-KR" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/01_jump to python/CHAP04/debug.py" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/01_jump to python/CHAP06/exer02.py" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/01_jump to python/CHAP06/exer02_1.py" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/01_jump to python/CHAP06/exer02_mod.py" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/01_jump to python/CHAP06/exer02_mod2.py" charset="EUC-KR" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
