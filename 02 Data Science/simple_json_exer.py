@@ -1,6 +1,6 @@
 import json
 g_json_big_data=[]
-with open("sample.json",encoding='UTF8') as json_file:
+with open("sample.json", encoding='UTF8') as json_file:
     json_object = json.load(json_file) #load
     json_string = json.dumps(json_object)#dumps
     g_json_big_data = json.loads(json_string)#load
@@ -8,7 +8,7 @@ print(json_object)
 print(json_string)
 print(g_json_big_data[0])
 print(g_json_big_data[0]['레벨 2-1 키']) #json에서 값을 가져오는 방법
-g_json_big_data.append({'레벨 2-4 키':'수박'})#데이터 쓰기
+g_json_big_data.append({'레벨 2-4 키': '수박'})#데이터 쓰기
 g_json_big_data[0]['레벨 2-1 키'] = "체리" #데이터 업데이트
 del g_json_big_data[2]
 
