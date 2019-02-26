@@ -192,6 +192,9 @@ while True:
             for a in range(len(data)):
                 if edit_id == data[a]["student_ID"]:
                     break
+            if edit_id != data[a]["student_ID"]:
+                print("유효하지 않은 ID를 입력하셨습니다.")
+                continue
             edit_choice = input("1. 학생 이름\n2. 나이\n3. 주소\n4. 과거 수강 횟수\n5. 현재 수강 중인 강의 정보\n0. 이전메뉴\n메뉴를 선택하세요 : ")
             if edit_choice == "1" or edit_choice =="2" or edit_choice =="3" or edit_choice == "4" :
                 edit_value= input("변경할 값을 입력하세요: ")
