@@ -250,15 +250,31 @@ while True:
                     elif edit_value == 0 :
                         break
 
-            with open('ITT_Student.json', 'w', encoding='utf8') as jsonfile:
-                readable_result = json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False)
-                jsonfile.write(readable_result)
-
     elif menu_choice == "4":
         if file_choice =="2":
             print("파일이 존재하지 않습니다. 학생정보를 먼저 입력하세요")
             continue
+        delete_id = input("삭제할 학생 ID를 입력하세요: ")
+        print("삭제 유형을 선택하세요\n1. 전체 삭제\n2. 현재 수강 중인 특정 과목정보 삭제\n3. 이전 메뉴")
+        delete_choice = input("메뉴 번호를 선택하세요: ")
+        if delete_choice == "1":
+            for a in range(len(data)):
+                if data[a]["student_ID"] == delete_id:
+                    del[data[a]]
+        elif delete_choice == "2":
+            numeric = 0
+            for c in range(len(data[a]["total_course_info"]["learning_course_info"])):
+                numeric += 1
+                print(str(numeric) + "번 = " + data[a]["total_course_info"]["learning_course_info"][c]["course_name"])
+                delete_lecture_number = input("몇번 강의정보를 삭제하시겠습니까?")
+                del[data[a]["total_course_info"]["learning-course_info"][numeric-1]]
+        elif delete_choice =="3":
+            continue
     elif menu_choice == "5":
+        if file_choice == 1:
+            file_write("w",data, new_file_path)
+        else :
+            file_write("w",data)
         exit()
     else:
         print("잘못입력하셨습니다.")
