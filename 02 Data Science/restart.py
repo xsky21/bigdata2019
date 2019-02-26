@@ -1,2 +1,5 @@
 a = [1,2,3]
-print(len(a))
+b = set(a)
+print(b)
+print(list(b))
+%s/foo/bar
