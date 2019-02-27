@@ -55,9 +55,12 @@ def main():
     display_count = 100
 
     jsonSearch = getNaverSearchResult(sNode,search_text,1,display_count) #겟네이버서치리저트함수로 간다
+    print(jsonSearch)
     index = 1
     while((jsonSearch!=None) and (jsonSearch['display']!=0) and index <10):
         for post in jsonSearch['items']:
+            print(post)
+            exit()
             getPostData(post,jsonResult)
         nStart = jsonSearch['start']+jsonSearch['display']
         jsonSearch = getNaverSearchResult(sNode,search_text,nStart,display_count)
