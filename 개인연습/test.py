@@ -1,5 +1,2 @@
-import re
-m = re.compile("a.b")
-p = m.match("a"
-            "b")
-print(p)
+print("그만해좀".center(30))
+print("그만해좀".center
