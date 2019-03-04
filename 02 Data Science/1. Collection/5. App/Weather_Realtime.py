@@ -1,6 +1,7 @@
 import urllib.request, datetime, json, time
 
-access_key = "vAe1%2BKCqtES1M7d6ak4P4fxFK9e8NIGewO0lnGtqxkHXvldhZXEdBFtQKmLRewyjyWKXTU18WBufPxgs3S2YbA%3D%3D"
+access_key = "VpEIQ%2FUlK0X06tDjkyUyUNIwToQeexfINLuESs9NNzBV8YQe1471a022Qf5lt5YSnnJdYsFlPKPjk5n9VMihaQ%3D%3D"
+
 def get_Request_URL (url) : # (1) 기상 정보 (동네예보정보 조회 서비스) / (2) 통합대기환경 정보(대기오염정보 조회 서비스)
     req = urllib.request.Request(url)
 
@@ -44,13 +45,11 @@ def Make_Weather_Json(day_time) : # (1) 기상 정보 (동네예보정보 조회
             retJson = json.dumps(json_weather_result, indent=4, sort_keys=True, ensure_ascii=False)
             outfile.write(retJson)
 
-        print('동구_신암동_초단기예보조회.json SAVED\n')
 
 def get_Realtime_Weather_Info() : # (1) 기상 정보 (동네예보정보 조회 서비스) json 파일 만들기 전, 실시간 업데이트 확인 함수
     day_min_int = int(day_min)
     if 30 < day_min_int <= 59 : ## 실시간 업데이트가 있는지 없는지 확인,, 30분부터 59분까지는 실시간 정보 업데이트 됨
         day_time = time.strftime("%H%M", time.localtime(time.time()))
-        print("\n<<실시간 기상정보 업데이트를 실시합니다!!>>\n".center(30))
         Make_Weather_Json(day_time)
     elif 0 <= day_min_int <= 30 : ## 실시간 업데이트가 되지 않을 경우, 가장 최신인 한 시간 전껄로
         day_hour_int = int(day_hour)
@@ -59,7 +58,6 @@ def get_Realtime_Weather_Info() : # (1) 기상 정보 (동네예보정보 조회
         revised_min = 60 + (day_min_int-30) # 정확히 30분을 뺀다.
         day_time = "{0:0>2}".format(day_hour_int) + str(revised_min) ## 시간이 한 자리 수일 때 930 되는 것을 0930으로 바꿔줌
 
-        print("\n<<가장 최신 기상정보 업데이트를 실시합니다!!>>\n".center(30))
         Make_Weather_Json(day_time)
     return day_min_int
 
