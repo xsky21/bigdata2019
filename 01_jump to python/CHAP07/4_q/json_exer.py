@@ -29,15 +29,15 @@ while True:
                 new_post = input("주소 (예: 대구광역시 동구 아양로 135): ")
                 lecture_took_time = input("과거 수강 횟수(예:1): ")
                 lecture_current_pf = input("현재 수강 과목이 있습니까? (예:y/n): ")
-                    if lecture_current_pf == "n":
-                        break
-                    elif lecture_current_pf =="y":
-                        new_lecture_code = input("강의코드 (예:IB171106,OB0104..): ")
-                        new_lecuture_name = input("강의명 (예:IOT 빅데이터 실무반): ")
-                        new_instructor = input("강사 (예:이현구): ")
-                        new_open_date = input("개강일 (예:2017-11-06): ")
-                        new_close_date = input("종료일 (예ㅣ2018-09-05): ")
-                        lucture_current_pf_2 = input("현재 수강 과목이 더 있습니까? (예:y/n): ")
+                if lecture_current_pf == "n":
+                    break
+                elif lecture_current_pf =="y":
+                    new_lecture_code = input("강의코드 (예:IB171106,OB0104..): ")
+                    new_lecuture_name = input("강의명 (예:IOT 빅데이터 실무반): ")
+                    new_instructor = input("강사 (예:이현구): ")
+                    new_open_date = input("개강일 (예:2017-11-06): ")
+                    new_close_date = input("종료일 (예ㅣ2018-09-05): ")
+                    lucture_current_pf_2 = input("현재 수강 과목이 더 있습니까? (예:y/n): ")
 
 
             quit()

@@ -8,7 +8,6 @@ def get_Request_URL (url) : # (1) 기상 정보 (동네예보정보 조회 서�
     try :
         response = urllib.request.urlopen(req)
         if response.getcode() == 200 :
-           print("[%s] Url Request Success" %datetime.datetime.now())
            return response.read().decode("UTF-8")
     except Exception as e :
         print(e)

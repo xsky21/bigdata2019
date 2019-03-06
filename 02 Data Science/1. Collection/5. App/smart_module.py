@@ -1,6 +1,7 @@
 from Weather_Realtime import *
 import json
 def smart_module():
+    global g_Balcony_Windows,g_Radiator,g_Dehumidifier
     get_Realtime_Weather_Info()
     with open("동구_신암동_초단기예보조회.json",'r', encoding="utf-8") as outfile:
         json_object = json.load(outfile)
@@ -41,7 +42,6 @@ def smart_module():
         elif big_data[a]["category"] == "WSD":
             WSD_list.append(str(big_data[a]["fcstValue"]))
         time_list.append(str(big_data[a]["fcstTime"]))
-
     time_list = list(set(time_list))
     time_list.sort()
     for b in range(len(time_list)):
@@ -55,20 +55,20 @@ def smart_module():
         outfile.write(csv_list)
 
     if int(RN1_list[0]) > 0:
-        Balcony = "close"
+        g_Balcony_Windows = "close"
     elif int(RN1_list[0]) == 0:
-        Balcony = "open"
+        g_Balcony_Windows = "open"
 
     if int(T1H_list[0]) < 20:
-        Radiator = "turn on"
+        g_Radiator = "turn on"
     elif int(T1H_list[0]) >= 20:
-        Radiator = "turn off"
+        g_Radiator = "turn off"
 
     if int(REH_list[0]) < 55:
-        Dehumidifier = "turn off"
+        g_Dehumidifier = "turn off"
     elif int(REH_list[0]) >= 55:
-        Dehumidifier = "turn on"
-    return Balcony, Radiator, Dehumidifier
+        g_Dehumidifier = "turn on"
+
 if __name__ =="__main__":
     smart_module()
     #이거 자체를 함수로 만들어서 돌리기 쉽게 만들자 함수로 정리하는건 나중에
