@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<response>
+	<header>
+		<resultCode>00</resultCode>
+		<resultMsg>NORMAL SERVICE.</resultMsg>
+	</header>
+	<body>
+		<items>
+			
+				<item>
+					<dataTime>2019-03-05 11:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.007</so2Value>
+					<coValue>1.0</coValue>
+					<o3Value>0.010</o3Value>
+					<no2Value>0.061</no2Value>
+					<pm10Value>115</pm10Value>
+					
+                        <pm10Value24>67</pm10Value24>
+                    
+					
+                        <pm25Value>80</pm25Value>
+                    
+                    
+                        <pm25Value24>45</pm25Value24>
+                    
+					<khaiValue>185</khaiValue>
+					<khaiGrade>3</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>3</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>3</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>3</pm10Grade1h>
+                        <pm25Grade1h>4</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 10:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.005</so2Value>
+					<coValue>0.9</coValue>
+					<o3Value>0.006</o3Value>
+					<no2Value>0.054</no2Value>
+					<pm10Value>94</pm10Value>
+					
+                        <pm10Value24>59</pm10Value24>
+                    
+					
+                        <pm25Value>62</pm25Value>
+                    
+                    
+                        <pm25Value24>39</pm25Value24>
+                    
+					<khaiValue>112</khaiValue>
+					<khaiGrade>3</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>2</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>3</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>3</pm10Grade1h>
+                        <pm25Grade1h>3</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 09:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.005</so2Value>
+					<coValue>0.8</coValue>
+					<o3Value>0.004</o3Value>
+					<no2Value>0.051</no2Value>
+					<pm10Value>81</pm10Value>
+					
+                        <pm10Value24>50</pm10Value24>
+                    
+					
+                        <pm25Value>58</pm25Value>
+                    
+                    
+                        <pm25Value24>33</pm25Value24>
+                    
+					<khaiValue>95</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>2</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>3</pm10Grade1h>
+                        <pm25Grade1h>3</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 08:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.005</so2Value>
+					<coValue>0.7</coValue>
+					<o3Value>0.003</o3Value>
+					<no2Value>0.047</no2Value>
+					<pm10Value>73</pm10Value>
+					
+                        <pm10Value24>47</pm10Value24>
+                    
+					
+                        <pm25Value>47</pm25Value>
+                    
+                    
+                        <pm25Value24>28</pm25Value24>
+                    
+					<khaiValue>82</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>2</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>2</pm10Grade1h>
+                        <pm25Grade1h>3</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 07:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.004</so2Value>
+					<coValue>0.7</coValue>
+					<o3Value>0.002</o3Value>
+					<no2Value>0.043</no2Value>
+					<pm10Value>48</pm10Value>
+					
+                        <pm10Value24>43</pm10Value24>
+                    
+					
+                        <pm25Value>31</pm25Value>
+                    
+                    
+                        <pm25Value24>24</pm25Value24>
+                    
+					<khaiValue>72</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>2</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>2</pm10Grade1h>
+                        <pm25Grade1h>2</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 06:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.003</so2Value>
+					<coValue>0.5</coValue>
+					<o3Value>0.011</o3Value>
+					<no2Value>0.031</no2Value>
+					<pm10Value>45</pm10Value>
+					
+                        <pm10Value24>42</pm10Value24>
+                    
+					
+                        <pm25Value>34</pm25Value>
+                    
+                    
+                        <pm25Value24>24</pm25Value24>
+                    
+					<khaiValue>72</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>2</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>2</pm10Grade1h>
+                        <pm25Grade1h>2</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 05:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.003</so2Value>
+					<coValue>0.5</coValue>
+					<o3Value>0.024</o3Value>
+					<no2Value>0.018</no2Value>
+					<pm10Value>47</pm10Value>
+					
+                        <pm10Value24>41</pm10Value24>
+                    
+					
+                        <pm25Value>30</pm25Value>
+                    
+                    
+                        <pm25Value24>23</pm25Value24>
+                    
+					<khaiValue>69</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>1</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>2</pm10Grade1h>
+                        <pm25Grade1h>2</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 04:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.003</so2Value>
+					<coValue>0.5</coValue>
+					<o3Value>0.014</o3Value>
+					<no2Value>0.029</no2Value>
+					<pm10Value>39</pm10Value>
+					
+                        <pm10Value24>40</pm10Value24>
+                    
+					
+                        <pm25Value>27</pm25Value>
+                    
+                    
+                        <pm25Value24>23</pm25Value24>
+                    
+					<khaiValue>69</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>1</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>2</pm10Grade1h>
+                        <pm25Grade1h>2</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 03:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.004</so2Value>
+					<coValue>0.5</coValue>
+					<o3Value>0.009</o3Value>
+					<no2Value>0.035</no2Value>
+					<pm10Value>39</pm10Value>
+					
+                        <pm10Value24>41</pm10Value24>
+                    
+					
+                        <pm25Value>23</pm25Value>
+                    
+                    
+                        <pm25Value24>23</pm25Value24>
+                    
+					<khaiValue>69</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>2</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>2</pm10Grade1h>
+                        <pm25Grade1h>2</pm25Grade1h>
+                    
+				</item>
+			
+				<item>
+					<dataTime>2019-03-05 02:00</dataTime>
+					
+                        <mangName>도시대기</mangName>
+                    
+					<so2Value>0.003</so2Value>
+					<coValue>0.5</coValue>
+					<o3Value>0.007</o3Value>
+					<no2Value>0.040</no2Value>
+					<pm10Value>40</pm10Value>
+					
+                        <pm10Value24>41</pm10Value24>
+                    
+					
+                        <pm25Value>25</pm25Value>
+                    
+                    
+                        <pm25Value24>22</pm25Value24>
+                    
+					<khaiValue>66</khaiValue>
+					<khaiGrade>2</khaiGrade>
+					<so2Grade>1</so2Grade>
+					<coGrade>1</coGrade>
+					<o3Grade>1</o3Grade>
+					<no2Grade>2</no2Grade>
+					<pm10Grade>2</pm10Grade>
+					
+                        <pm25Grade>2</pm25Grade>
+                    
+                    
+                        <pm10Grade1h>2</pm10Grade1h>
+                        <pm25Grade1h>2</pm25Grade1h>
+                    
+				</item>
+			
+		</items>
+			<numOfRows>10</numOfRows>
+			<pageNo>1</pageNo>
+			<totalCount>650</totalCount>
+	</body>
+</response>
