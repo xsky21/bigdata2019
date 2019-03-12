@@ -11,7 +11,7 @@ input_file = sys.argv[1]
 # Connect to a MySQL database
 #con = MySQLdb.connect(host='localhost', port=3306, db='my_suppliers', user='python_training', passwd='python_training')
 # con = MySQLdb.connect(host='localhost', port=3306, db='my_suppliers', user='root', passwd='1111')
-con = MySQLdb.connect(host='localhost', port=3308, db='my_suppliers', user='bigdata', passwd='1111')
+con = MySQLdb.connect(host='localhost', port=3308, db='my_suppliers', user='open_source', passwd='1111')
 c = con.cursor()
 
 # Read the CSV file
