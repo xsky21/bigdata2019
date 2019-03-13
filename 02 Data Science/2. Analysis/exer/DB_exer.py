@@ -15,7 +15,7 @@ c = con.cursor()
 #Middle_level VARCHAR(10),
 #Low_level VARCHAR(10));"""
 #c.execute(query)
-#con.commit()
+#con.commit()파이썬 결측값
 
 data_frame = pd.read_excel("Student_Info.xlsx",sheet_name = "info1")
 row_range = len(data_frame["Student_ID"].array)
@@ -24,8 +24,8 @@ for a in range(row_range):
     data.append(tuple(data_frame.iloc[a, :].array))
 print(data)
 #완전히 포매팅 기법으로, execute로 돌린다.
-statement = """INSERT INTO student_info VALUES('%s','%s',%s,'%s','%s','%s','%s',%s');"""
-c.execute(statement, data)
-c.commit()
+#statement = """INSERT INTO student_info VALUES(?,?,?,?,?,?,?,?);"""
+#c.executemany(statement, data)
+#c.commit()
 
 
