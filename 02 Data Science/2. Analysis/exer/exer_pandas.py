@@ -68,7 +68,7 @@ def print_col(key):
 def print_row(key):
     global data_frame
     key = int(key)-2
-    b = data_frame.iloc[key, :]
+    b = data_frame.iloc[key]
     k = b.array
     print(" ".join(str(v) for v in k))
 
