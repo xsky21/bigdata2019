@@ -20,7 +20,7 @@ clf.fit(data["images"], data["labels"])
 predict = clf.predict(test["images"])
 # 결과 확인하기
 ac_score = metrics.accuracy_score(test["labels"], predict)
-cl_report = metrics.classfication_report(test["labels"], predict)
+cl_report = metrics.classification_report(test["labels"], predict)
 print("정답률 =", ac_score)
 print("리포트 =")
 print(cl_report)

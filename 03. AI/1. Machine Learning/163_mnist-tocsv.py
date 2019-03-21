@@ -3,7 +3,7 @@ def to_csv(name, maxdata):
     # 레이블 파일과 이미지 파일 열기
     lbl_f = open("./mnist/"+name+"-labels-idx1-ubyte", "rb")
     img_f = open("./mnist/"+name+"-images-idx3-ubyte", "rb")
-    csv_f = open("./mnist/"+name+".csv","w", encoding='utf-8')
+    csv_f = open("./mnist/"+name+".csv","w")
     # 헤더 정보 읽기
     mag, lbl_count = struct.unpack(">II", lbl_f.read(8))
     mag, img_count = struct.unpack(">II", img_f.read(8))
@@ -23,7 +23,7 @@ def to_csv(name, maxdata):
             s = "P2 28 28 255\n"
             s += " ".join(sdata)
             iname = "./mnist/{0}-{1}-{2}.pgm".format(name,idx,label)
-            with open(iname, "w", encodint ="utf-8") as f:
+            with open(iname, "w", encoding ="utf-8") as f:
                 f.write(s)
     csv_f.close()
     lbl_f.close()

@@ -1,7 +1,7 @@
 import urllib.request as req
 import gzip, os, os.path
 savepath = "./mnist"
-baseurl = "http://yann.lecun.com/exdv/mnist"
+baseurl = "http://yann.lecun.com/exdb/mnist"
 files = [
     "train-images-idx3-ubyte.gz",
     "train-labels-idx1-ubyte.gz",
@@ -9,10 +9,10 @@ files = [
     "t10k-labels-idx1-ubyte.gz"]
 
 # 다운로드
-if not os.path.exits(savepath) : os.mkdir(savepath)
+if not os.path.exists(savepath) : os.mkdir(savepath)
 for f in files:
     url = baseurl + "/" + f
-    loc = savepath+ "/" + f
+    loc = savepath+ "/" + f #로컬 파일 경로
     print("download:", url)
     if not os.path.exists(loc):
         req.urlretrieve(url, loc)
