@@ -1,8 +1,10 @@
-from xml.etree.ElementTree import parse
+from xml.etree.ElementTree import parse,dump
 tree = parse("note.xml")
 note = tree.getroot() #최상위 노드를 가져온다는 뜻
-print(note.get("date"))
-print(note.get("foo","default"))
-print(note.keys())
-print(note.items())
+dump(tree)
+dump(note)
+# print(note.get("date"))
+# print(note.get("name"))
+# print(note.keys())
+# print(note.items())
 
