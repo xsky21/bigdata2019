@@ -46,9 +46,8 @@ def main():
         for month in range(1,13):
             yyyymm = "{0}{1:0>2}".format(str(year),str(month))
             nPagenum = 1
-
             #[CODE 3]
-            While True:
+            while True:
                 jsonData = getTourPointVisitor(yyyymm,sido,gungu,nPagenum,nItems)
                 if(jsonData['response']['header']['resultMsg']=='ok'):
                     nTotal = jsonData['response']['body']['totalCount']
