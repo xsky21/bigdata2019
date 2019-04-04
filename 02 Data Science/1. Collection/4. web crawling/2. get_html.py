@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup # HTML을 파싱하는 모듈
 
 # 웹 페이지를 가져온 뒤 BeautifulSoup 객체로 만듦
 response = requests.get('http://www.weather.go.kr/weather/observation/currentweather.jsp')
-soup = BeautifulSoup(response.content, 'html.parser')
+response_content = response.content
+soup = BeautifulSoup(response_content, 'html.parser')
 #<table class="table_develop3">을 찾음
 table = soup.find('table',{'class':'table_develop3'})
 data = [] #데이터를 저장할 리스트 생성
