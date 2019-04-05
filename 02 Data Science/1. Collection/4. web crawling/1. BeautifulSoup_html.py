@@ -7,7 +7,7 @@ html='''
 Naver 실시간 영화 순위
 <td class="title">
 <div class="tit3">
-<a title="1위 영화">극한직업
+<a title="1위 영화">
 </a>
 </div>
 </td>
@@ -39,4 +39,5 @@ print(tag.text) #태그의 텍스트를 출력한다
 
 print("\ntag.string")
 print(tag.string) #태그의 텍스트를 출력한다 시스템의 오류로 여기도 통하는 것.
+pass
 
