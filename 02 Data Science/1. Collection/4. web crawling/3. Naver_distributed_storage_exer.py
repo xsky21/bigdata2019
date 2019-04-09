@@ -1,8 +1,10 @@
+import requests
 import urllib.request
 from bs4 import BeautifulSoup
 import os
-html = urllib.request.urlopen('http://movie.naver.com/movie/sdb/rank/rmovie.nhn')
-soup = BeautifulSoup(html,'html.parser')
+response = requests.get('http://movie.naver.com/movie/sdb/rank/rmovie.nhn')
+byte = response.content
+soup = BeautifulSoup(byte,'html.parser')
 tags = soup.find_all("div", attrs = {'class' : "tit3"}) #영화 이름 찾기
 up_down = soup.find_all('td', attrs={'class':'range ac'})#순위가 얼마나 바뀌었나
 index = soup.find_all('img',width="14", height="13") #순위 찾기
