@@ -20,7 +20,7 @@ for b in range(49):
         up_down_arrow = "-"
     movie_list.append(index[b].get("alt") + '\t' + (tags[b].a).text + "\t" + up_down_arrow + up_down[b].text)
 movie_list = "\n".join(movie_list)
-storage_number =1
+storage_number = 1
 file_path= "./distributed_storage_%d" % storage_number
 file_number=1
 file_name_number = 1
