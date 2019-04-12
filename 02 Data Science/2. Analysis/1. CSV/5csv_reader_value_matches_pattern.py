@@ -6,7 +6,7 @@ import re
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-pattern = re.compile(r'(?P<my_pattern_group>^001-.*)', re.I)
+pattern = re.compile(r'(^001-.*)', re.I)
 
 with open(input_file,'r', newline='') as csv_in_file:
     with open(output_file, 'w', newline='') as csv_out_file:
